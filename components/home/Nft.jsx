@@ -76,7 +76,7 @@ const Nft = () => {
 
     return (
         <section className=''>
-            <div className='flex justify-center text-6xl font-display text-hallo pt-20 pb-10'>
+            <div className='flex justify-center text-6xl font-display text-hallo pt-24 pb-20'>
                 $CLAWS NFT
             </div>
             <div id='Nft' className="banner md:py-0 md:px-24">

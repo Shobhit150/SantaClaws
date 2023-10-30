@@ -2,7 +2,7 @@ const about = './assets/image/About/About_img.png';
 
 const About = () => {
     return (
-        <section id="About" className="flex flex-col py-24 gap-8">
+        <section id="About" className="flex flex-col py-24 -mb-36 sm:-mb-10 gap-8">
             <h1 className="flex text-center justify-center text-6xl text-hallo font-display">
                 Where Crypto Meets Horror
             </h1>

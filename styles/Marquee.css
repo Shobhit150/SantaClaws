@@ -75,15 +75,24 @@
     
 
 }
-.crypto1,
+.crypto1{
+  width: 28rem;
+  height: 55%;
+}
 
 
-.crypto5,
-.crypto6,
-.crypto7,
-.crypto8{
-  width: 22rem;
+.crypto5{
+  width: 28rem;
+  height: 75%;
+}
+.crypto7{
+  width: 28rem;
   height: 65%;
+}
+.crypto8{
+  width: 28rem;
+  height: 75%;
+
 }
 .crypto3{
   width: 28rem;
@@ -94,11 +103,15 @@
   height: 50%;
 }
 .crypto2{
-  width: 26rem;
+  width: 30rem;
   height: 50%;
 }
 .scrip, .scroll, .scroller, .tag-list {
     width: 100%;
 }   
+.crypto6{
+  width: 30rem;
+  height: 75%;
 
+}
 

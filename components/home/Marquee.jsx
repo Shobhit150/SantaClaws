@@ -4,14 +4,14 @@ import React, { useEffect, useRef } from 'react';
 import  { initializeScroller } from '../../public/assets/js/Marquee.js'
 
 
-const crypto1 = '/assets/image/Marquee/crypto/ambcrypto_new.webp';
-const crypto2 = '/assets/image/Marquee/crypto/beincrypto_new.webp';
-const crypto3 = '/assets/image/Marquee/crypto/bitcoin_new.webp';
-const crypto4 = '/assets/image/Marquee/crypto/blockMedia_new.webp';
-const crypto5 = '/assets/image/Marquee/crypto/coingape_new.webp';
-const crypto6 = '/assets/image/Marquee/crypto/cointelegraph_new.webp';
-const crypto7 = '/assets/image/Marquee/crypto/newsbit_new.svg';
-const crypto8 = '/assets/image/Marquee/crypto/yahoo_new.webp';
+const crypto1 = '/assets/image/Marquee/crypto/mar8.png';
+const crypto2 = '/assets/image/Marquee/crypto/mar4.png';
+const crypto3 = '/assets/image/Marquee/crypto/mar6.png';
+const crypto4 = '/assets/image/Marquee/crypto/mar3.png';
+const crypto5 = '/assets/image/Marquee/crypto/mar1.png';
+const crypto6 = '/assets/image/Marquee/crypto/mar5.png';
+const crypto7 = '/assets/image/Marquee/crypto/mar2.png';
+const crypto8 = '/assets/image/Marquee/crypto/mar7.png';
 
 
 const Marquee = () => {

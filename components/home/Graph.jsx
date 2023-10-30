@@ -23,7 +23,8 @@ const Graph = () => {
     
 
     return (
-        <section id='Tokenomics' className="graph text-center mt-[5rem] overflow-hidden">
+        <div className='flex flex-col justify-center items-center'>
+        <section id='Tokenomics' className="graph w-full text-center mt-[5rem] overflow-hidden">
             <div className="graph__container">
                 <div className="graph__text text-hallo font-display text-[2.2rem] md:text-[4rem]">
                     Tokenomics
@@ -33,7 +34,16 @@ const Graph = () => {
                     <svg ref={svgRef} id="pieChart" className=''></svg>
                 </div>
             </div>
+                
         </section>
+        <a target='_blank' href="https://bscscan.com/token/0x834C108A211f725F6fAa327F7c386D8F3a770DBE">
+                    <button className='py-2 px-4 z-50 mt-4 bg-hallo text-white
+                        rounded-md hover:bg-opacity-70 active:scale-90 transition ease-in-out
+                        shadow-md'>
+                        Token Contract
+                    </button>
+                </a>
+        </div>
     );
 }
 

@@ -68,7 +68,7 @@ const Presale = () => {
             alert('Connect a Wallet First')
             return
         }
-        if (inputValue > 50) {
+        if (inputValue < 50) {
             alert('Amount cant be below 50$')
             return
         }
