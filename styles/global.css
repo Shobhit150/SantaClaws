@@ -160,15 +160,20 @@ body {
   background-size: cover;
   opacity: 0.35;
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center 20%; /* Centers the image */
-  top: 0;
+  background-position: center 0%; /* Centers the image */
+  top: 0px;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 0px;
   z-index: -1;
   position: absolute;
 }
+@media (max-width: 768px) {
+  .home::before {
+    top: -100px;
 
+  }
+}
 .typed-cursor {
   color: hsl(22, 72%, 50%);
   /* Replace with the actual color value of text-primary */

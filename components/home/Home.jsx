@@ -29,10 +29,10 @@ const Home = () => {
     }, []);
 
     return (
-        <>
-            <section className="home p-20">
-                <div className='w-full gap-4 sm:gap-0 flex flex-col md:flex-row  text-white justify-around items-center'>
-                    <div className="text-center flex flex-col justify-center">
+
+            <section className="home md:p-20">
+                <div className='w-full gap-4 md:gap-36 sm:gap-0 flex flex-col md:flex-row  text-white justify-around items-center '>
+                    <div className="text-center flex flex-col justify-center mt-40 md:mt-0">
                         <h1 className='font-display text-hallo text-[3rem] md:text-[4.5rem]'>
                             First Horror
                         </h1>
@@ -59,7 +59,7 @@ const Home = () => {
 
                     </div>
 
-                    <div className='flex md:mt-[2rem] w-[95%] sm:w-[26rem] items-center '>
+                    <div className='flex w-[95%] sm:w-[26rem] items-center mt-40 md:mt-0'>
                         <Presale />
                     </div>
 
@@ -68,7 +68,6 @@ const Home = () => {
             </section >
 
 
-        </>
     )
 }
 
