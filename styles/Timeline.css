@@ -1,0 +1,97 @@
+.tl-item {
+  transition: width 0.5s ease;
+  position: relative; 
+  border: 1px solid hsla(255, 90%, 90%, 0.5);
+
+  
+  
+}
+.t1-item:hover {
+  z-index: -1;
+}
+.tl_bg{
+  position: absolute;
+  
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter .5s ease;
+  filter: grayscale(1) blur(5px);
+
+}
+.tl-item:before,
+.tl-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;  /* Setting this above the content but below the text */
+  opacity: 1;  /* Full opacity by default */
+  transition: background 0.5s ease;  /* Transitioning the background gradient */
+}
+.tl-item .tl_bg {
+  transition: filter 1s ease;
+}
+
+.tl-item .stage_name {
+  transition: transform 0.3s ease;
+}
+
+.tl-item:hover .tl_bg {
+  filter: grayscale(0) blur(1px);
+}
+
+.tl-item:hover .stage_name {
+  font-size: 2.5rem;
+  transform: translateY(-10rem);
+}
+
+
+
+.tl-item .stage_desc {
+  width: 100%; /* corrected from "full" to "100%" */
+  font-size: 1px;
+  transition: font-size 0.3s ease, transform 0.3s ease; /* Added transition for font-size and transform */
+}
+
+.tl-item:hover .stage_desc {
+  font-size: 20px;
+
+  transform: translateY(-22.5rem);
+}
+
+.tl-item:hover:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+@media (max-width: 768px) {
+  .tl-item:hover .stage_desc {
+    transform: translateY(-14.5rem);
+  }
+  .tl-item .stage_name {
+    font-size: 0.9rem;
+  }
+  .tl-item:hover .stage_name {
+    font-size: 1.7rem;
+    transform: translateY(-6.5rem);
+  }
+  .tl-item .stage_desc {
+    width: 100%; /* corrected from "full" to "100%" */
+    font-size: 1px;
+    transition: font-size 0.3s ease, transform 0.3s ease; /* Added transition for font-size and transform */
+  }
+  
+  .tl-item:hover .stage_desc {
+    font-size: 14px;
+    transform: translateY(-13.5rem);
+  }
+}

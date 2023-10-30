@@ -1,0 +1,111 @@
+/* Banner main styles */
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    /* Remove the background from here since we're using .banner-bg for the background */
+}
+
+/* Grayscale background styles */
+.banner .banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: -1; /* Ensure it's behind the content */
+    background: url(../public/assets/image/Nft/bg-1.png) no-repeat center center;
+    opacity: 0.55;
+    background-size: cover;
+    filter: blur(2px); /* Apply grayscale to this background */
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* Carousel box styles */
+.banner .carousel-box {
+
+    position: relative;
+
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    height: 30rem;
+
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+/* Carousel main styles */
+.carousel {
+
+    position: relative;
+    height: 500px;
+    perspective: 1500;
+
+
+}
+
+/* Carousel item styles */
+.carousel .carousel-item {
+    width: 250px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 20rem;
+    max-width: 250px;
+    border-radius: 10px;
+    transform: translateX(8px) translateY(-100px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.nft-dis {
+    width: 30%;
+    margin-left: 3rem;
+    height: 100%;  /* This will ensure that the nft-dis takes the full height of its parent. */
+}
+.nft__title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+}
+.nft__data {
+    
+    display: flex;
+    flex-direction: column; /* Stack the title and description on top of each other */
+    justify-content: center; /* Center them vertically */
+    align-items: center; /* Center them horizontally */
+    height: 100%; /* It takes the full height of its parent, nft-dis. */
+    text-align: center; /* This will center-align the text within the description */
+}
+
+.nft__description {
+    max-width: 80%; /* This prevents the text from being too wide and can be adjusted based on preference */
+}
+/* By default, the nft-dis div is visible */
+.nft-dis {
+    display: block;
+}
+
+/* Hide the nft-dis div on devices with a max-width of 768px (e.g., tablets and smaller) */
+@media only screen and (max-width: 768px) {
+    .nft-dis {
+        display: none;
+    }
+}

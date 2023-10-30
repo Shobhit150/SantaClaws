@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Lora:wght@600&family=Poppins:wght@400;500;700&family=Russo+One&display=swap');
+
+
+.scrip{
+
+
+
+    background-color: rgb(205,26,39);
+}
+.marq__text{
+  text-align: center;
+
+
+  color: rgb(205,26,39);
+}
+.scroller__inner{
+  height: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 40s;
+  }
+.scroller:hover .scroller__inner {
+    animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+      transform: translateX(0)
+  }
+
+  to {
+      transform: translateX(-33.333%)
+  }
+}
+
+
+  .tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+  }
+  
+  .tag-list img {
+    margin-right: 6rem;
+
+
+
+
+    transform: scale(.7);
+    
+
+}
+.crypto1,
+
+
+.crypto5,
+.crypto6,
+.crypto7,
+.crypto8{
+  width: 22rem;
+  height: 65%;
+}
+.crypto3{
+  width: 28rem;
+  height: 45%;
+}
+.crypto4{
+  width: 24rem;
+  height: 50%;
+}
+.crypto2{
+  width: 26rem;
+  height: 50%;
+}
+.scrip, .scroll, .scroller, .tag-list {
+    width: 100%;
+}   
+
+

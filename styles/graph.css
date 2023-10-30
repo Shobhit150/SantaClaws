@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "nosifer";
+  src: url("/assets/font/MeltedMonster.ttf") format("truetype");
+}
+.outer-container {
+  filter: drop-shadow(0px 0px 60px hsla(255, 100%, 100%, 0.3));
+}
+.label-line {
+  stroke: hsl(22, 72%, 50%); /* Change to desired color */
+  stroke-width: 1.5px;
+}
+
+.label-text {
+  overflow: visible;
+  fill: hsl(22, 72%, 50%); /* Change to desired color */
+  font-family: "nosifer", sans-serif; /* Change to desired font */
+  font-size: 8px !important;
+}
+/* By default, the SVG has the scale you provided in your React code */
+#pieChart {
+  transform: scale(3);
+}
+
+/* Scale the SVG on devices with a max-width of 768px (e.g., tablets and smaller) */
+@media only screen and (max-width: 768px) {
+  #pieChart {
+    transform: scale(1.2);
+  }
+}
+.h2 {
+  font-family: "nosifer";
+  src: url("/assets/font/MeltedMonster.ttf") format("truetype");
+}

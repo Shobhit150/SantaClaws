@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Melted";
+  src: url("../public/assets/font/MeltedMonster.ttf") format("truetype");
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cursor {
+  cursor: url("/assets/image/unnamed2.png") 10 10, auto !important;
+}
+.cursor:active {
+  cursor: url("/assets/image/unnamed.png") 10 10, auto !important;
+}
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #0f0e13;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  color: #fff;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.nav-fixed {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem; /* Adjust the value as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: slideDown 0.5s forwards; /* Adjust the duration (0.5s) as needed */
+  backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+}
+.active-item {
+  color: hsl(22, 72%, 50%);
+}
+
+.text-blue {
+  color: blue;
+}
+
+.gradient-bg-welcome {
+  background-color: #0f0e13;
+}
+
+.gradient-bg-services {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-transactions {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 50% 150%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* white glassmorphism */
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.eth-card {
+  background-color: #a099ff;
+  background-image: radial-gradient(
+      at 83% 67%,
+      rgb(152, 231, 156) 0,
+      transparent 58%
+    ),
+    radial-gradient(at 67% 20%, hsla(357, 94%, 71%, 1) 0, transparent 59%),
+    radial-gradient(at 88% 35%, hsla(222, 81%, 65%, 1) 0, transparent 50%),
+    radial-gradient(at 31% 91%, hsla(9, 61%, 61%, 1) 0, transparent 52%),
+    radial-gradient(at 27% 71%, hsla(336, 91%, 65%, 1) 0, transparent 49%),
+    radial-gradient(at 74% 89%, hsla(30, 98%, 65%, 1) 0, transparent 51%),
+    radial-gradient(at 53% 75%, hsla(174, 94%, 68%, 1) 0, transparent 45%);
+}
+
+.text-gradient {
+  background-color: #fff;
+  background-image: radial-gradient(
+      at 4% 36%,
+      hsla(0, 0%, 100%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*================ bg ====================*/
+.home {
+  position: relative;
+}
+.home::before {
+  content: "";
+  background-image: url("/assets/image/About/santa_claw.png");
+  background-size: cover;
+  opacity: 0.35;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center 20%; /* Centers the image */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.typed-cursor {
+  color: hsl(22, 72%, 50%);
+  /* Replace with the actual color value of text-primary */
+}
+
+.presale_form {
+  z-index: 1;
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 2px solid hsla(244, 16%, 92%, 0.5);
+
+  row-gap: 1.25rem;
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+
+  border-radius: 1rem;
+}
+
+.progress-bar {
+  border-radius: 20px;
+  border: 2px solid #3d3d3d;
+  width: 100%;
+  height: 30px;
+  background-color: #f3f3f3;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  margin: 2.5px;
+  display: flex;
+  height: 80%;
+  background: linear-gradient(
+    45deg,
+    #56aac2,
+    #75f9c8,
+    #ffc107,
+    #cd1b27,
+    #9c27b0
+  );
+  background-size: 200% auto;
+  animation: content_flowAnimation__Ehq6C 1.5s linear infinite;
+  border-radius: 20px;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+.content_progressSection___TWLW {
+  height: 100%;
+  border-right: 1px solid #000;
+  transform: skewX(-30deg);
+  flex-shrink: 0;
+  width: 26px;
+}
+
+@keyframes content_flowAnimation__Ehq6C {
+  0% {
+    filter: hue-rotate(0);
+  }
+
+  to {
+    filter: hue-rotate(1turn);
+  }
+}
+
+.about_image {
+  filter: drop-shadow(0px 0px 100px rgba(255, 255, 255, 0.1));
+}
+
+.wallet {
+  /* background-color: #f31260 !important; */
+  background: transparent !important;
+  border: 2px solid #e7632b !important;
+  color: #e7632b !important;
+  border-radius: 10px !important;
+  font-size: 18px !important;
+  padding: 8px 12px !important;
+}
+.wallet:hover {
+  opacity: 0.7 !important;
+}
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: #e76c37 transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

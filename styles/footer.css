@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Lora:wght@600&family=Poppins:wght@400;500;700&family=Russo+One&display=swap');
+
+.social__img{
+    filter: invert(100%)
+}
+.footer__head{
+    font-family: 'Butcherman', sans-serif;
+
+}

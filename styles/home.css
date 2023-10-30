@@ -1,0 +1,40 @@
+.coin_button {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  padding: 18px 20px;
+  border-radius: 10rem;
+  border: 1px solid hsla(244, 16%, 92%, 0.45);
+
+  background-color: hsla(244, 16%, 92%, 0.25);
+}
+
+.connect_button {
+  border-radius: 10rem;
+  border: 1px solid hsla(255, 100%, 100%, 0.5);
+}
+
+.vine_parent {
+  position: absolute;
+  top: -12rem;
+  right: 5rem;
+}
+
+.vine {
+  transform: rotate(-105deg);
+  width: 11rem;
+  height: auto;
+}
+
+.vine_parent2 {
+  position: absolute;
+  top: -4rem;
+  right: -7rem;
+}
+
+.vine2 {
+  transform: rotate(193deg) scaleX(-1);
+  width: 14rem;
+  height: auto;
+}

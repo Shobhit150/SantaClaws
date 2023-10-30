@@ -1,0 +1,33 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.1.13",
+    "@thirdweb-dev/react": "^4.0.7",
+    "@thirdweb-dev/sdk": "^4.0.6",
+    "d3": "^7.8.5",
+    "ethers": "^5.7.2",
+    "framer-motion": "^10.16.4",
+    "jquery": "^3.7.1",
+    "materialize-css": "^1.0.0",
+    "next": "13.5.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "scrollreveal": "^4.0.9",
+    "typed.js": "^2.0.16",
+    "zustand": "^4.4.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3"
+  }
+}
