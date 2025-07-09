@@ -122,7 +122,7 @@ const Presale = () => {
     });
 
     useEffect(() => {
-        const countDownDate = new Date("Nov 31, 2023 12:00:00").getTime();
+        const countDownDate = new Date("Nov 31, 2025 12:00:00").getTime();
 
         const countdownfunction = setInterval(() => {
             const now = new Date().getTime();
